@@ -13,6 +13,9 @@ import { RatingModule } from './ui/rating/rating.module';
 import { TooltipModule } from './ui/tooltip/tooltip.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuModule } from './ui/menu/menu.module';
+import { CatalogModule } from './ui/catalog/catalog.module';
+import { PriceModule } from './ui/price/price.module';
+import { ColorOptionModule } from './ui/color-option/color-option.module';
 
 
 
@@ -31,9 +34,13 @@ import { MenuModule } from './ui/menu/menu.module';
     RatingModule,
     TooltipModule,
     MenuModule,
-    NgbModule
+    NgbModule,
+    CatalogModule,
+    ColorOptionModule,
+    PriceModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

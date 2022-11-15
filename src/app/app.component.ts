@@ -1,3 +1,5 @@
+import { Product } from './types/card';
+import { products } from './data/products';
 import { environment } from './../environments/environment';
 import { Component } from '@angular/core';
 
@@ -9,8 +11,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'eshop';
   apiUrl = `${environment.api}`;
-  // buttonColor = 'default';
-  // buttonSize = 'default';
-  // buttonIsActive: null;
-  // buttonIsDisabled: null;
+  products: Product[] = products;
 }
